@@ -42,6 +42,12 @@ time, mark, audio, video {
     --black:rgb(0,0,0);
 
 }
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;    
+    font-family: 'Inter', sans-serif;
+}
 /*GLOBAL*/
 
 /*HEAD*/
@@ -280,36 +286,67 @@ nav>.container>.cartbox p{
     position: relative;
 }
 
-
 .slidertext1{
     position: absolute;
     width: 600px;
-    top:100px;
-    left:100px;
-}
-
-/*
-.carousel-caption{
-    width:600px;
-    height:400px;
-    left:150px;
-    top:100px;
-
-}*/
-
-.slidertext1>h1{
-    font-size: 62px;
-    font-weight: 700;
+    top:20%;
+    left:8%;
     color:var(--black);
 }
 
-.slidertext1>.cost,.slidertext1>.ctabtn,.slidertext1>.cost>p{
-color:var(--black);
-} 
+.slidertext2{
+    position: absolute;
+    width: 600px;
+    top:20%;
+    left:52%;
+    color:var(--black);
+}
 
-.slidertext1>.cost>p{
-    margin: 0px;
-    width:340px;
+.slidertext1>.heading, .slidertext2>.heading{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.slidertext1>.ctabtn, .slidertext2>.ctabtn{
+    margin:5px auto;
+    padding:15px 10px;
+    width:350px;
+    box-sizing: border-box;
+    background-color: var(--yellow);
+}
+
+.slidertext1>.fromtxt, .slidertext2>.fromtxt{
+    position: absolute;
+}
+
+.slidertext1>.cost>.bigtxt, .slidertext2>.cost>.bigtxt{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.slidertext1>.codebox, .slidertext2>.codebox{
+    color:var(--black);
+}
+
+.slidertext1>a, .slidertext2>a{
+    position: absolute;
+    background-color: var(--gray);
+    padding: 15px 30px;
+    right:30px;
+    top:220px;
+    border-radius: 30px;
+    text-decoration: none;
+    color:var(--white);
+}
+
+.slidertext1>.codebox, .slidertext2>.codebox{
+    padding:15px;
+    width: 230px;
+    position: absolute;
+    left:150px;
+    top:220px;
+    border:2px dashed var(--black);
+
 }
 
 /*BANNER END*/
@@ -331,5 +368,100 @@ color:var(--black);
     width:32%;
     flex-wrap: nowrap;
     height:200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.topproducts>div>.contentbox{
+    position: absolute;
+    width:250px;
+    height:150px;
+    left:30px;
+    top:50px;
+}
+
+.topproducts>div>.contentbox>h2{
+    font-weight: 900;
+    font-size: 22px;
+    padding:10px auto;
+    float: left;
+    width:100%;
+}
+
+.topproducts>div>.contentbox>.badage{
+    margin:10px auto;
+    border-radius: 5px;
+    padding: 2px 12px;
+    color: var(--white);
     background-color: var(--orange);
+}
+
+.topproducts>div>.contentbox>p{
+    margin:10px auto;
+}
+
+.topproducts>.item1{
+    background-color: var(--skyblue);
+    color: var(--white);
+}
+
+.topproducts>.item2{
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+.topproducts>.item3{
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.topproducts>.item2>.contentbox>a{
+    float: left;
+    margin-top: 10px;
+    text-decoration: none;
+    color:var(--white);
+    background-color: var(--black);
+    padding:10px 25px;
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.topproducts>.item2>.contentbox>a:hover{
+    float: left;
+    margin-top: 10px;
+    text-decoration: none;
+    color:var(--black);
+    background-color: var(--white);
+    padding:10px 25px;
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+
+.topproducts>.item3>.contentbox>a, 
+.topproducts>.item1>.contentbox>a{
+    float: left;
+    margin-top: 10px;
+    text-decoration: none;
+    color:var(--black);
+    background-color: var(--white);
+    padding:10px 25px;
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.topproducts>.item3>.contentbox>a:hover, 
+.topproducts>.item1>.contentbox>a:hover{
+    float: left;
+    margin-top: 10px;
+    text-decoration: none;
+    color:var(--black);
+    background-color: var(--yellow);
+    padding:10px 25px;
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: 14px;
 }
