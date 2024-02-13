@@ -23,23 +23,24 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-.container{
+._container{
     width:100%;
-    display: flex;
     padding:0px 30px;
     box-sizing: border-box;
 }
 
 :root{
-    --gray:rgb(41,53,68);
-    --darkgray:rgb(33,42,54);
-    --yellow:rgb(252,201,2);
-    --white:rgb(255,255,255);
-    --lightgray:rgb(241,244,250);
-    --skyblue:rgb(60,78,186);
-    --red:rgb(211,32,35);
-    --orange:rgb(255,108,22);
-    --black:rgb(0,0,0);
+    --mygreen:rgb(25,149,136);
+    --mypink:rgb(230,42,101);
+    --mygray:rgb(41,53,68);
+    --mydarkgray:rgb(33,42,54);
+    --myyellow:rgb(252,201,2);
+    --mywhite:rgb(255,255,255);
+    --mylightgray:rgb(241,244,250);
+    --myskyblue:rgb(60,78,186);
+    --myred:rgb(211,32,35);
+    --myorange:rgb(255,108,22);
+    --myblack:rgb(0,0,0);
 
 }
 
@@ -47,20 +48,26 @@ html{
     font-family: 'Roboto', sans-serif;
     font-family: 'Oswald', sans-serif;    
     font-family: 'Inter', sans-serif;
+
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 /*GLOBAL*/
 
 /*HEAD*/
 
 header{
-    background-color: var(--gray);
+    background-color: var(--mygray);
     width: 100%;
 }
 
-header>.container{
+header>.head{
     height:128px;
     justify-content: space-between;
     align-items: center;
+    display: flex;
 }
 
 .search{
@@ -95,7 +102,7 @@ header>.container{
     width:15px;
     height:15px;
     border-radius: 10px;
-    background-color: var(--yellow);
+    background-color: var(--myyellow);
     z-index: 1;
 }
 
@@ -115,21 +122,21 @@ header>.container{
 }
 
 .search>.btn{
-    background-color: var(--yellow);
+    background-color: var(--myyellow);
     width:162px;
     text-align: center;
     line-height: 30px;
-    color: var(--black);
+    color: var(--myblack);
     cursor: pointer;
     border-radius: initial;
 }
 
 .search>.btn:hover{
-    background-color: var(--black);
+    background-color: var(--myblack);
     width:162px;
     text-align: center;
     line-height: 30px;
-    color: var(--white);
+    color: var(--mywhite);
     cursor: pointer;
     border-radius: initial;
    }
@@ -137,13 +144,13 @@ header>.container{
 .socialicons{
     display: flex;
     justify-content: space-between;
-    color: var(--white);
+    color: var(--mywhite);
     width:300px;
     font-size: 20px;
 }
 
 .socialicons>.whatsapp{
-    color:var(--white);
+    color:var(--mywhite);
     position: relative;
     text-decoration: none;
     font-size: 16px;
@@ -153,7 +160,7 @@ header>.container{
     position: absolute;
     font-family: 'FontAwesome';
     content:'\f232';
-    color:var(--yellow);
+    color:var(--myyellow);
     font-size: 30px;
     left:-40px;
 }
@@ -161,24 +168,25 @@ header>.container{
 .socialicons>.whatsapp::after{
     position: absolute;
     content:'9821671927';
-    color:var(--yellow);
+    color:var(--myyellow);
     font-size: 16px;
     left:0px;
     top:16px;
 }
 nav{
     width: 100%;
-    background-color: var(--darkgray);
+    background-color: var(--mydarkgray);
 }
 
-nav>.container{
+nav>._container{
     height:90px;
-    color: var(--white);
+    color: var(--mywhite);
     align-items: center;
     justify-content: space-between;
+    display: flex;
 }
 
-nav>.container>.cartbox{
+nav>._container>.cartbox{
     font-size: 20px;
     width:80px;
     display: flex;
@@ -186,20 +194,20 @@ nav>.container>.cartbox{
     justify-content: space-between;
 }
 
-nav>.container>.cartbox>.count{
+nav>._container>.cartbox>.count{
     width:18px;
     height: 18px;
     border-radius: 16px;
-    background-color: var(--yellow);
+    background-color: var(--myyellow);
     position: absolute;
     text-align: center;
     font-size: 14px;
-    color:var(--black);
+    color:var(--myblack);
     left:16px;
     top:-8px;
 }
 
-nav>.container>.cartbox p{
+nav>._container>.cartbox p{
     font-size: 12px;
     padding: 0px 10px;
     box-sizing: border-box;
@@ -210,8 +218,8 @@ nav>.container>.cartbox p{
 .catagoerybtn{
     width:350px;
     height:64px;
-    background-color: var(--yellow);
-    color: var(--black);
+    background-color: var(--myyellow);
+    color: var(--myblack);
     box-sizing: border-box;
     padding: 30px auto;
     align-items: center;
@@ -232,8 +240,8 @@ nav>.container>.cartbox p{
 
 .catagoerybtn{
     width:288px;
-    background-color: var(--yellow);
-    color: var(--black);
+    background-color: var(--myyellow);
+    color: var(--myblack);
     box-sizing: border-box;
     padding: 13px 20px;
     display: flex;
@@ -254,24 +262,100 @@ nav>.container>.cartbox p{
     padding: 10px 15px;
 }
 
-.productslider> .container{
-    height: 100px;
+.links>ul>li>.greenbadage{
+    font-size: 10px;
+    border-radius: 3px;
+    padding: 3px;
+    background-color: var(--mygreen);
+    color:var(--mywhite);
 }
 
-.productslider> .container> ul{
+.links>ul>li>.pinkbadage{
+    font-size: 10px;
+    border-radius: 3px;
+    padding: 3px;
+    background-color: var(--mypink);
+    color:var(--mywhite);
+}
+
+.links>ul>li>i{
+    font-size: 4px;
+}
+
+/*productslider*/
+.productslider> ._container{
+    height: 100px;
+    margin:20px auto;
+}
+
+.productcol{
     display: flex;
-    justify-content:space-around;
-    width: 100%;
     align-items: center;
 }
 
-.productslider> .container> ul >li{
-    list-style: none;
-    height:80px;
-    width:80px; 
-    background-color: var(--red);
-    border-radius: 80px;
+.productcol p{
+    margin: 0px 10px;
+    float: left;
+    font-size: 10px;
+    font-weight: 900;
 }
+
+.productimg{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+/*Product slider ends*/
+
+.productslider .carousel-control-prev,
+.productslider .carousel-control-next{
+    color:var(--myblack);
+    font-size: 16px;
+    width: 5%;
+    opacity: .5;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    color: var(--mywhite);
+    font-weight: 900;
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    opacity: .1;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover{
+    opacity: 1;
+}
+
+.carousel-control-prev>.bannerbtn,
+.carousel-control-next>.bannerbtn
+{
+    width:100px;
+    height:100px;
+    background-color: var(--myblack);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p_imgholder{
+    width:100px;
+    height:100px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.p_imgholder img{
+    width:100%;
+}
+
+
 /*HEAD END*/
 
 /*BANNER*/
@@ -290,7 +374,7 @@ nav>.container>.cartbox p{
     width: 600px;
     top:20%;
     left:8%;
-    color:var(--black);
+    color:var(--myblack);
 }
 
 .slidertext2{
@@ -298,20 +382,23 @@ nav>.container>.cartbox p{
     width: 600px;
     top:20%;
     left:52%;
-    color:var(--black);
+    color:var(--myblack);
 }
 
-.slidertext1>.heading, .slidertext2>.heading{
+.slidertext1>h1, .slidertext2>h1{
     font-size: 60px;
     font-weight: 600;
+    font-family: "Poppins";
 }
 
 .slidertext1>.ctabtn, .slidertext2>.ctabtn{
+    font-family: "PoppinsThin100";
+    font-weight: 100;
     margin:5px auto;
     padding:15px 10px;
     width:350px;
     box-sizing: border-box;
-    background-color: var(--yellow);
+    background-color: var(--myyellow);
 }
 
 .slidertext1>.fromtxt, .slidertext2>.fromtxt{
@@ -324,18 +411,18 @@ nav>.container>.cartbox p{
 }
 
 .slidertext1>.codebox, .slidertext2>.codebox{
-    color:var(--black);
+    color:var(--myblack);
 }
 
 .slidertext1>a, .slidertext2>a{
     position: absolute;
-    background-color: var(--gray);
+    background-color: var(--mygray);
     padding: 15px 30px;
     right:30px;
     top:220px;
     border-radius: 30px;
     text-decoration: none;
-    color:var(--white);
+    color:var(--mywhite);
 }
 
 .slidertext1>.codebox, .slidertext2>.codebox{
@@ -344,12 +431,13 @@ nav>.container>.cartbox p{
     position: absolute;
     left:150px;
     top:220px;
-    border:2px dashed var(--black);
+    border:2px dashed var(--myblack);
 
 }
 
 /*BANNER END*/
 
+/*TOP PRODUCTS*/
 .mainbody{
     width: 100%;
     height: auto;
@@ -391,8 +479,8 @@ nav>.container>.cartbox p{
     margin:10px auto;
     border-radius: 5px;
     padding: 2px 12px;
-    color: var(--white);
-    background-color: var(--orange);
+    color: var(--mywhite);
+    background-color: var(--myorange);
 }
 
 .topproducts>div>.contentbox>p{
@@ -400,26 +488,26 @@ nav>.container>.cartbox p{
 }
 
 .topproducts>.item1{
-    background-color: var(--skyblue);
-    color: var(--white);
+    background-color: var(--myskyblue);
+    color: var(--mywhite);
 }
 
 .topproducts>.item2{
-    background-color: var(--yellow);
-    color: var(--black);
+    background-color: var(--myyellow);
+    color: var(--myblack);
 }
 
 .topproducts>.item3{
-    background-color: var(--red);
-    color: var(--white);
+    background-color: var(--myred);
+    color: var(--mywhite);
 }
 
 .topproducts>.item2>.contentbox>a{
     float: left;
     margin-top: 10px;
     text-decoration: none;
-    color:var(--white);
-    background-color: var(--black);
+    color:var(--mywhite);
+    background-color: var(--myblack);
     padding:10px 25px;
     border-radius: 20px;
     font-weight: 900;
@@ -430,8 +518,8 @@ nav>.container>.cartbox p{
     float: left;
     margin-top: 10px;
     text-decoration: none;
-    color:var(--black);
-    background-color: var(--white);
+    color:var(--myblack);
+    background-color: var(--mywhite);
     padding:10px 25px;
     border-radius: 20px;
     font-weight: 900;
@@ -444,8 +532,8 @@ nav>.container>.cartbox p{
     float: left;
     margin-top: 10px;
     text-decoration: none;
-    color:var(--black);
-    background-color: var(--white);
+    color:var(--myblack);
+    background-color: var(--mywhite);
     padding:10px 25px;
     border-radius: 20px;
     font-weight: 900;
@@ -457,10 +545,79 @@ nav>.container>.cartbox p{
     float: left;
     margin-top: 10px;
     text-decoration: none;
-    color:var(--black);
-    background-color: var(--yellow);
+    color:var(--myblack);
+    background-color: var(--myyellow);
     padding:10px 25px;
     border-radius: 20px;
     font-weight: 900;
     font-size: 14px;
+}
+/*TOP PRODUCTS ENDS*/
+
+/*TREND PRODUCT*/
+.trendproduct{
+    width: 100%;
+    margin-top:20px;
+}
+
+.trendproduct>.tabhead{
+    display: flex;
+    justify-content: space-between;
+    height:50px;
+    align-items: center;
+    border-bottom: 5px solid var(--myyellow);
+}
+
+.trendproduct>.tabhead{
+    align-items: center;
+}
+
+.trendproduct>.tabhead>.heading{
+    font-size: 30px;
+}
+
+.trendproduct>.tabhead>.navtab>button{
+    border:none;
+    display: block;
+    float: left;
+    height: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    margin:0px 2px;
+    font-weight: 600;
+    font-size: 12px;
+    background-color: transparent;
+    outline: none;
+}
+
+.trendproduct>.tabhead>.navtab>button:hover{
+    border:none;
+    display: block;
+    float: left;
+    height: 50px;
+    background-color: var(--myyellow);
+    padding: 20px;
+    border-radius: 5px;
+    margin:0px 2px;
+    font-weight: 600;
+    font-size: 12px;
+    outline: none;
+}
+.trendproduct>.tabhead>.navtab>.arrowbtn{
+    padding: 15px 10px;
+    cursor: pointer;
+    float: left;
+    align-items: center;
+    color:var(--mydarkgray);
+    background-color: transparent;
+}
+
+.trendproduct>.tabhead>.navtab>.arrowbtn>.fa-solid{
+    color:red;
+}
+
+.trendproduct>.trendItems>.featured,
+.trendproduct>.trendItems>.seller,
+.trendproduct>.trendItems>.new{
+    display: none;
 }
