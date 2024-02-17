@@ -451,6 +451,12 @@ nav>._container>.cartbox p{
     justify-content: space-between;
 }
 
+.topproducts>.item1>img,
+.topproducts>.item2>img,
+.topproducts>.item3>img{
+    float: right;
+}
+
 .topproducts>div{
     width:32%;
     flex-wrap: nowrap;
@@ -620,4 +626,60 @@ nav>._container>.cartbox p{
 .trendproduct>.trendItems>.seller,
 .trendproduct>.trendItems>.new{
     display: none;
+}
+
+/*feature product crousel*/
+.owl-carousel{
+    height:300px;
+}
+
+.owl-carousel .item{
+    border:1px solid var(--mylightgray);
+    height: 350px;
+    margin-top:15px;
+    text-align: center;
+}
+
+.owl-carousel .item .image{
+    margin:50px auto;
+    width:150px;
+    height:100px;
+}
+
+.owl-carousel .item .image>img{
+    width:80%;
+    height:auto;
+}
+
+.owl-carousel .item .discription{
+    display: inline-block;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    padding:0px 15px;
+    color:var(--myskyblue);
+}
+
+.owl-carousel .item .cost{
+    font-weight: 600;
+    padding: 15px;
+    text-align: center;
+}
+
+.owl-carousel .item .cost::before{
+    content: '\e1bc';
+    font-family: 'FontAwesome';
+    font-size: 10px;
+    padding: 0px 3px;
+    vertical-align: super;
+}
+
+.owl-carousel .item input[type=button]{
+    margin:0px auto;
+    float:none;
+    padding:10px 15px;
+    border: none;
+    background-color: var(--myyellow);
+    border-radius: 15px;
+    font-size: 14px;
 }
