@@ -19,10 +19,10 @@ function trendTab(_who,_tab){
         case 'laptop': _tt= _trendItems[1]
                             break;
 
-        case 'watch':   _tt= _trendItems[3]
+        case 'watch': _tt= _trendItems[3]
                             break;
         
-        case 'new':     _tt =  _trendItems[5]
+        case 'trend': _tt= _trendItems[5]
                             break;
     }
 
@@ -37,29 +37,16 @@ trendTab(_trendTab,'laptop');
 
 let laptopCrousel = $('._laptops');
 let watchCrousel = $('._watch')
+let trendCrousel = $('._trenditem')
+let newCrousel = $('._newProducts')
 
-$(document).ready(function(){
+$(document).ready(()=>{
 
-    laptopCrousel.owlCarousel({
-      loop:true,
-      margin:10,
-      nav:false,
-      responsiveClass:true,
-      dots:false,
-      responsive:{
-        0:{
-          items:1
-        },
-        600:{
-          items:4
-        },
-        1000:{
-          items:6
-        }
-      }
-    })
+  let myArr = [laptopCrousel,watchCrousel,trendCrousel,newCrousel]
 
-    watchCrousel.owlCarousel({
+  myArr.forEach((_Crousel)=>{
+
+      _Crousel.owlCarousel({
         loop:true,
         margin:10,
         nav:false,
@@ -78,6 +65,7 @@ $(document).ready(function(){
         }
       })
 
+  })
 
 });
 
@@ -91,9 +79,10 @@ $(document).ready(function(){
             
             case 'watch':   watchCrousel.trigger('prev.owl.carousel', [500]);
                             break;
-        }
 
-        
+            case 'trend':   trendCrousel.trigger('prev.owl.carousel', [500]);
+                            break;
+        }
 
     })
 
@@ -107,7 +96,20 @@ $(document).ready(function(){
             
             case 'watch':   watchCrousel.trigger('next.owl.carousel', [500]);
                             break;
+
+            case 'trend':   trendCrousel.trigger('next.owl.carousel', [500]);
+                            break;
         }
 
+    })
+
+    $('._productprev').click(()=>{
+      newCrousel.trigger('prev.owl.carousel', [500])
+      console.log('prev click');
+    })
+
+    $('._productnext').click(()=>{
+      newCrousel.trigger('next.owl.carousel', [500])
+      console.log('next click');
     })
 

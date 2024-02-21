@@ -561,12 +561,13 @@ nav>._container>.cartbox p{
 /*TOP PRODUCTS ENDS*/
 
 /*TREND PRODUCT*/
-.trendproduct{
+.tabsection{
     width: 100%;
     margin-top:20px;
+    float:left;
 }
 
-.trendproduct>.tabhead{
+.tabsection>.tabhead{
     display: flex;
     justify-content: space-between;
     height:50px;
@@ -574,15 +575,15 @@ nav>._container>.cartbox p{
     border-bottom: 5px solid var(--myyellow);
 }
 
-.trendproduct>.tabhead{
+.tabsection>.tabhead{
     align-items: center;
 }
 
-.trendproduct>.tabhead>.heading{
+.tabsection>.tabhead>.heading{
     font-size: 30px;
 }
 
-.trendproduct>.tabhead>.navtab>button{
+.tabsection>.tabhead>.navtab>button{
     border:none;
     display: block;
     float: left;
@@ -596,7 +597,7 @@ nav>._container>.cartbox p{
     outline: none;
 }
 
-.trendproduct>.tabhead>.navtab>button:hover{
+.tabsection>.tabhead>.navtab>button:hover{
     border:none;
     display: block;
     float: left;
@@ -609,7 +610,7 @@ nav>._container>.cartbox p{
     font-size: 12px;
     outline: none;
 }
-.trendproduct>.tabhead>.navtab>.arrowbtn{
+.tabsection>.tabhead>.navtab>.arrowbtn{
     padding: 15px 10px;
     cursor: pointer;
     float: left;
@@ -618,20 +619,17 @@ nav>._container>.cartbox p{
     background-color: transparent;
 }
 
-.trendproduct>.tabhead>.navtab>.arrowbtn>.fa-solid{
+.tabsection>.tabhead>.navtab>.arrowbtn>.fa-solid{
     color:red;
 }
 
-.trendproduct>.trendItems>.featured,
-.trendproduct>.trendItems>.seller,
-.trendproduct>.trendItems>.new{
+.tabsection>.trendItems>.featured,
+.tabsection>.trendItems>.seller,
+.tabsection>.trendItems>.trend{
     display: none;
 }
 
 /*feature product crousel*/
-.owl-carousel{
-    height:300px;
-}
 
 .owl-carousel .item{
     border:1px solid var(--mylightgray);
@@ -683,3 +681,13 @@ nav>._container>.cartbox p{
     border-radius: 15px;
     font-size: 14px;
 }
+/* Crousels */
+
+/*Banner start*/
+.banner{
+    width:100%;
+    margin:20px auto;
+    float:left;
+    display: flex;
+}
+/*Banner end*/
