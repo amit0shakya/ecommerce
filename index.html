@@ -11,7 +11,6 @@
 
     <link rel="stylesheet" href="./assets/others/fa/css/all.min.css">
     
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Oswald:wght@300;400&family=Poppins:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -1264,7 +1263,58 @@
 
                   <div class="tabhead">
                     <span class="heading">Our Brands</span>
+                    <!--
+                      <span class="navtab">
+                        <span class="arrowbtn _productprev" role="button">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </span>
+
+                        <span class="arrowbtn _productnext" role="button">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </span>
+                    </span>
+                    -->
+  
+                  </div>
+
+                    <div class="brands">
+                      
+                      <div class="item">A</div>
+                      <div class="item">B</div>
+                      <div class="item">C</div>
+                      <div class="item">D</div>
+                      <div class="item">E</div>
+                    </div>
+
+                <section>
+
+                <section class="services">
+
+                  <div class="item">Service 1</div>
+                  <div class="item">Service 2</div>
+                  <div class="item">Service 3</div>
+                  <div class="item">Service 4</div>
+                
+                </section>
+
+                <section class="bestProducts">
+                  <!--2 products-->
+                  <div class="item p_speaker">product 1</div>
+                  <div class="item p_watch">product 2</div>
+                </section>
+
+
+                <!--Trending Crousel-->
+                <section class="tabsection">
+
+                  <div class="tabhead">
+                    <span class="heading">Trending Products</span>
                     <span class="navtab">
+
+                        <button class="tabbutton" onclick="trendTab(this,'laptop')">Headphones</button>
+                        <button class="tabbutton" onclick="trendTab(this,'watch')">Led TV</button>
+                        <button class="tabbutton" onclick="trendTab(this,'trend')">Smart Phones</button>
+
                         <span class="arrowbtn _productprev" role="button">
                             <i class="fa-solid fa-angle-left"></i>
                         </span>
@@ -1274,8 +1324,67 @@
                         </span>
                     </span>
                   </div>
-                <section>
-            
+
+
+                  <div class="crouselwrapper">
+
+                      <div class="staticBanner">
+                         banner here
+                      </div>
+
+                      <div class="owl-carousel _trendingProducts">
+                                <div class="item carouselitem">
+                                  <div class="image">
+                                        <img src="./assets/images/trending_items/bags.jpeg" alt="img1">
+                                      </div>
+                                      <p class="discription">Women Black, Brown Hand-held Bag - Extra Spacious  (Pack of: 2)</p>
+                                      <p class="cost">53,999/-</p>
+                                      <input type="button" value="Select options" />
+                                  </div>
+                      </div>
+                    
+                  </div>
+
+                  </section>
+                  <!--Trending Crousel End-->
+
+                  <!--Blog Crousel-->
+
+                  <section class="tabsection">
+
+                    <div class="tabhead">
+                      <span class="heading">From The Blog </span>
+                      <span class="navtab">
+
+                          <span class="arrowbtn _productprev" role="button">
+                              <i class="fa-solid fa-angle-left"></i>
+                          </span>
+  
+                          <span class="arrowbtn _productnext" role="button">
+                              <i class="fa-solid fa-angle-right"></i>
+                          </span>
+                      </span>
+                    </div>
+  
+  
+                    <div class="crouselwrapper">
+  
+                        <div class="owl-carousel _blogCrousel">
+                                  <div class="item carouselitem">
+                                    <div class="image">
+                                          <img src="./assets/images/trending_items/bags.jpeg" alt="img1">
+                                        </div>
+                                        <p class="discription">Women Black, Brown Hand-held Bag - Extra Spacious  (Pack of: 2)</p>
+                                        <p class="cost">53,999/-</p>
+                                        <input type="button" value="Select options" />
+                                    </div>
+                        </div>
+                      
+                    </div>
+  
+                    </section>
+
+                  <!--Blog Crousel End-->
               </div>
 
         </div>

@@ -690,4 +690,70 @@ nav>._container>.cartbox p{
     float:left;
     display: flex;
 }
+
+.banner>img{
+    width:100%;
+}
 /*Banner end*/
+
+.brands{
+    display: flex;
+    margin:20px auto;
+    justify-content: space-between;
+}
+
+.brands>.item{
+    width:19%;
+    height:250px;
+    background-color: var(--mylightgray)
+}
+
+.services{
+    margin:15px auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--mylightgray);
+}
+
+.services>.item{
+    width: 23%;
+    height:100px;
+}
+
+.bestProducts{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bestProducts>.item{
+    width: 48%;
+    height: 250px;
+}
+
+.bestProducts>.p_speaker{
+    background-color: var(--myred);
+}
+
+.bestProducts>.p_watch{
+    background-color: var(--myskyblue);
+}
+
+.crouselwrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.staticBanner{
+    width: 15%;
+    height:350px;
+    background-color: var(--myyellow);
+    margin-top: 15px;
+}
+
+._trendingProducts{
+    width:84%;
+}

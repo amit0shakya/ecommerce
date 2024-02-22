@@ -36,9 +36,11 @@ trendTab(_trendTab,'laptop');
 // Owl Crousel Setup
 
 let laptopCrousel = $('._laptops');
-let watchCrousel = $('._watch')
-let trendCrousel = $('._trenditem')
-let newCrousel = $('._newProducts')
+let watchCrousel = $('._watch');
+let trendCrousel = $('._trenditem');
+let newCrousel = $('._newProducts');
+let tproductCrousel = $('._trendingProducts');
+let blogCrousel =$('._blogCrousel')
 
 $(document).ready(()=>{
 
@@ -64,6 +66,51 @@ $(document).ready(()=>{
           }
         }
       })
+
+      tproductCrousel.owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        responsiveClass:true,
+        dots:false,
+        responsive:{
+          0:{
+            items:1
+          },
+          600:{
+            items:2
+          },
+          900:{
+            items:3
+          },
+          1000:{
+            items:5
+          }
+        }
+      })
+
+      blogCrousel.owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        responsiveClass:true,
+        dots:false,
+        responsive:{
+          0:{
+            items:1
+          },
+          600:{
+            items:2
+          },
+          900:{
+            items:3
+          },
+          1000:{
+            items:4
+          }
+        }
+      })
+
 
   })
 
