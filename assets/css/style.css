@@ -294,21 +294,27 @@ justify-content: space-between;
     font-size: 10px;
 }
 
+.catagoerybtn_dd>ul>li:hover >.submenu,
+.catagoerybtn_dd>ul>li:hover >.submenuB
+{
+    display: initial;
+}
 
-.submenu{
+.submenu, .submenuB{
     position: absolute;
     z-index: 1;
     left:295px;
     top:0px;
-    width:500px;
+    width:700px;
     background-color: var(--mywhite);
-    box-shadow: -5px 5px 8px 0px rgba(0, 0, 0, 0.1)
+    box-shadow: -5px 5px 8px 0px rgba(0, 0, 0, 0.1);
+    display: none;
 }
-
 .submenu>.list{
-    width:230px;
+    width:33.3%;
     float: left;
     box-sizing:border-box;
+    padding:10px 0px;
 }
 .submenu>.list>ul>li{
     list-style: none;
@@ -321,17 +327,22 @@ justify-content: space-between;
 
 .submenu>.list>ul>li>a{
     color:var(--mydarkgray);
-    padding:5px;
     display: block;
-    padding:10px 5px;
+    padding:8px 15px;
 }
 
 .submenu>.list>ul>li>a:hover{
-    text-decoration: none;    
+    text-decoration: none;
 }
 
 .submenu>.list>ul>li>.title{
     font-weight: 600;
+}
+
+.submenuB>.list{
+    width:50%;
+    float: left;
+    box-sizing:border-box;
 }
 
 .links ul{
