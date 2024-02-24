@@ -174,6 +174,7 @@ header>.head{
     top:16px;
 }
 nav{
+    position: relative;
     width: 100%;
     background-color: var(--mydarkgray);
 }
@@ -246,11 +247,92 @@ nav>._container>.cartbox p{
     padding: 13px 20px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 .catagoerybtn .hamburg-icon {
     margin-right: 15px;
 }
 
+.catagoerybtn_dd{
+    z-index: 21;
+    width: 300px;
+    background-color: var(--mywhite);
+    top:0px;
+    position: absolute;
+    top:50px;
+    left: 0px;
+    box-sizing: border-box;
+    border:2px solid var(--myyellow);
+}
+
+
+.catagoerybtn_dd>ul>li{
+    list-style: none;
+    display: block;
+    color: var(--mygray);
+    padding: 0px 5px;
+    background-color: transparent;
+    position: relative;
+}
+
+.catagoerybtn_dd>ul>li:hover{
+    background-color: var(--mylightgray);
+}
+
+.catagoerybtn_dd>ul>li>a{
+display: flex;
+justify-content: space-between;
+ padding: 18px 10px;
+ text-decoration: none;
+ color: var(--myblack);
+ font-weight: 500;
+}
+
+.catagoerybtn_dd>ul>li>.dd::after{
+    content: '\f078';
+    font-family: 'FontAwesome';
+    font-size: 10px;
+}
+
+
+.submenu{
+    position: absolute;
+    z-index: 1;
+    left:295px;
+    top:0px;
+    width:500px;
+    background-color: var(--mywhite);
+    box-shadow: -5px 5px 8px 0px rgba(0, 0, 0, 0.1)
+}
+
+.submenu>.list{
+    width:230px;
+    float: left;
+    box-sizing:border-box;
+}
+.submenu>.list>ul>li{
+    list-style: none;
+}
+
+.submenu>.list>ul>li:hover{
+    list-style: none;
+    background-color: var(--mylightgray);
+}
+
+.submenu>.list>ul>li>a{
+    color:var(--mydarkgray);
+    padding:5px;
+    display: block;
+    padding:10px 5px;
+}
+
+.submenu>.list>ul>li>a:hover{
+    text-decoration: none;    
+}
+
+.submenu>.list>ul>li>.title{
+    font-weight: 600;
+}
 
 .links ul{
     display: flex;
